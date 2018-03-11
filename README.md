@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/christopher-evans/log-psr-3-bridge.svg?branch=master)](https://travis-ci.org/christopher-evans/log-psr-3-bridge)
 [![Coverage Status](https://coveralls.io/repos/github/christopher-evans/log-psr-3-bridge/badge.svg?branch=master)](https://coveralls.io/github/christopher-evans/log-psr-3-bridge?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/51638f617cb68a480007/maintainability)](https://codeclimate.com/github/christopher-evans/log-psr-3-bridge/maintainability)
+
 ## Autoloading
 
 This package is [PSR-4][] autoloadable via composer or otherwise mapping the `West\Log`
