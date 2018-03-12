@@ -7,8 +7,8 @@
 
 ## Autoloading
 
-This package is [PSR-4][] autoloadable via composer or otherwise mapping the `West\Log`
-namespace to the `src/` directory.  To run the tests the `West\Log` namespace should map
+This package is [PSR-4][] autoloadable via composer or otherwise mapping the `West\LogPsr3Bridge`
+namespace to the `src/` directory.  To run the tests the `West\LogPsr3Bridge` namespace should map
 to the `tests/` directory.
 
 
