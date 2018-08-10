@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * This file is part of the West\\LogPsr3Bridge package
  *
  * (c) Chris Evans <cmevans@tutanota.com>
@@ -31,16 +31,16 @@ use West\Log\Log;
 final class Logger extends AbstractLogger
 {
     /**
-     * @brief West\Log logger
+     * @var Log $log West PHP Log.
      *
-     * @var Log $log
+     * @brief West\Log logger
      */
     private $log;
 
     /**
      * Logger constructor.
      *
-     * @param Log $log
+     * @param Log $log West PHP Log.
      */
     public function __construct(Log $log)
     {
@@ -50,12 +50,12 @@ final class Logger extends AbstractLogger
     /**
      * Logs with an arbitrary level.
      *
-     * @param mixed $level
-     * @param string $message
-     * @param array $context
+     * @param mixed  $level   Log level.
+     * @param string $message Log message.
+     * @param array  $context Context parameters.
      *
      * @return void
-     * @throws \Exception
+     * @throws InvalidArgumentException If the log level was not found.
      */
     public function log($level, $message, array $context = [])
     {
@@ -63,8 +63,8 @@ final class Logger extends AbstractLogger
             throw new InvalidArgumentException('Invalid level');
         }
 
-        if (! defined(LogLevel::class . '::'.strtoupper($level))) {
-            throw new InvalidArgumentException('Level "'.$level.'" is not defined');
+        if (! defined(LogLevel::class . '::' . strtoupper($level))) {
+            throw new InvalidArgumentException('Level "' . $level . '" is not defined');
         }
 
         $this->log->log($level, $message, $context);

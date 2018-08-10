@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * This file is part of the West\\LogPsr3Bridge package
  *
  * (c) Chris Evans <cmevans@tutanota.com>
