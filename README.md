@@ -29,7 +29,7 @@ and [PSR-4][].
 
 ## Documentation
 
-This package is documented [here](./docs/index.md).  To generate the docs run
+This package is documented [here](https://christopher-evans.github.io/log-psr-3-bridge/).  To generate the docs run
 run `composer install --no-dev`, ensure [MkDocs][] is installed and available
 as `doxygen` and run `composer docs`.
 
